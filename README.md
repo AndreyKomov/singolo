@@ -1,1 +1,1 @@
-# [singolo](https://AndreyKomov.github.io/Singolo/singolo1.html)
+# [singolo](https://andreykomov.github.io/Singolo/singolo1.html)
