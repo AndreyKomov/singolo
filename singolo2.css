@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* FONTS */
+@font-face {
+	font-family: "Lato";
+	src: url("assets/fonts/Lato-Regular.ttf");
+}
+
+.title {
+	font-family: "Lato";
+}
+/* FONTS */
+
+body {
+
+	font-family: "Lato", sans-serif;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  background-color: #2d303a;
+}
+
+.envelope {
+  width: 940px;
+  height: 784px;
+  padding: 40px;
+  margin: 0 auto; 
+}
+
+.heading {
+  font-size: 15px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  letter-spacing: 0.04em;
+  padding-top: 29px;
+  text-align: left;
+}
+
+.subheading {
+  width: 940px;
+  font-size: 17px;
+  color: #767e9e;
+  font-family: "Lato";
+  padding-top: 32px;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+.nav {
+  font-family: "Lato", sans-serif;
+	margin-top: 15px;
+}
+
+.web_design, .graphic_design, .artwork {
+  position: relative;
+	font-size: 12px;
+  color: #767e9e;
+  font-family: "Lato";
+	text-decoration: none;
+	margin: 0 7px 0 0;
+	letter-spacing: 0.03em;
+  transition: color 0.1s linear;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  padding: 3px 5px 3px 3px;
+}
+
+.all {
+  position: relative;
+	font-size: 12px;
+  color: #dedede;
+  font-family: "Lato";
+	text-decoration: none;
+  margin: 0 7px 0 0;
+  transition: color 0.1s linear;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  padding: 3px 7px; 
+}
+
+nav a:hover {
+	color: #f06c64;
+	cursor: pointer;
+}
+
+.portfolio_images {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
+  gap: 18px;
+  margin-top: 20px;
+  max-height: 604px;
+}
+
+.pf_bottom {
+  height: 6px;
+  background-color: #323746;
+}
+/* PORTFOLIO */
+
+/* ABOUT US */
+.about_us {
+  background-color: #f2f2f2;
+}
+
+.envelope_about_us {
+  width: 940px;
+  height: 688px;
+  padding: 40px 40px 0 40px;
+  margin: 0 auto;
+}
+
+.head_about_us {
+  height: 112px;
+  padding-top: 19px;
+}
+
+.about_us h1 {
+  font-size: 30px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 0.019em;
+}
+
+.about_us p {
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  padding-top: 18px;
+  letter-spacing: -0.005em;
+  /* word-spacing: 0.01em; */
+}
+
+.person_list {
+  padding-top: 46px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  gap: 15px;
+}
+
+.adam_jensen {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  padding-top: 12px;
+  letter-spacing: 0.01em;
+}
+
+.adam_jensen_description {
+  width: 300px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  padding-top: 10px;
+  letter-spacing: -0.007em;
+}
+
+.desmond_miles {
+  font-size: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  padding-top: 8px;
+  letter-spacing: 0.01em;
+}
+
+.desmond_miles_description {
+  width: 300px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  padding-top: 8px;
+  letter-spacing: 0.007em;
+}
+
+.scolara_visari {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  padding-top: 10px;
+  letter-spacing: 0.017em;
+}
+
+.scolara_visari_description {
+  width: 300px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  padding-top: 10px;
+  letter-spacing: 0.009em;
+}
+
+.social {
+  padding-top: 26px;
+  cursor: pointer;
+}
+
+ .facebook:hover {
+  transform: scale(1.15);
+}
+
+.google:hover {
+  transform: scale(1.15);
+}
+
+.twitter:hover {
+  transform: scale(1.15);
+}
+
+.linkedin:hover {
+  transform: scale(1.15);
+}
+
+.gl, .tw, .linked {
+  padding-left: 3px;
+}
+
+.bottom {
+  height: 6px;
+  background-color: #ffffff;
+}
