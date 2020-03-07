@@ -1,0 +1,261 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* FONTS */
+@font-face {
+	font-family: "Lato";
+	src: url("assets/fonts/Lato-Regular.ttf");
+}
+
+.title {
+	font-family: "Lato";
+}
+/* FONTS */
+
+body {
+
+	font-family: "Lato", sans-serif;
+}
+
+.get_a_quote {
+  background-color: #f06c64;
+  height: 648px;
+}
+
+.get_content {
+  width: 940px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.get_content h1 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  padding-top: 29px;
+  letter-spacing: 0.01em;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.get_description {
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  padding-top: 28px;
+  letter-spacing: -0.01em;
+}
+
+.get_a_quote_form {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 15px;
+  width: 620px;
+  padding-top: 45px;
+}
+
+.get_a_quote_form_input,
+.get_a_quote_textarea {
+  width: 619px;
+  height: 39px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d6564f;
+  resize: none;
+  /* padding-left: 14px; */
+}
+
+.get_a_quote_form_input::placeholder,
+.get_a_quote_textarea::placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.get_a_quote_textarea {
+  width: 619px;
+  height: 202px;
+  border-radius: 5px;
+  background-color: #d6564f;
+}
+
+.get_a_quote_textarea::placeholder {
+  padding-top: 7px;
+}
+
+.get_a_quote_form :hover {
+  background-color: #bd4c46;
+  box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.39);
+}
+
+.submit_button {
+  height: 40px;
+  width: 100px;
+  border: solid #f0d8d9;
+  border-radius: 5px;
+  background-color: #d6564f;
+  color: #f48c8f;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.contact_info {
+  padding-top: 45px;
+  width: 300px;
+}
+
+.contact_info h2 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+
+.contact_info p {
+  width: 300px;
+  font-size: 12px;
+  line-height: 21.5px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding-top: 12px;
+  letter-spacing: -0.02em;
+}
+
+.contact_location {
+  display: block;
+  font-size: 12px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  position: absolute;
+  padding: 24px 0 10px 23px;
+}
+
+.contact_location::before {
+  background-image: url(assets/img/location.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+  width: 7px;
+  height: 12px;
+  left: 3px;
+  bottom: 10px;
+}
+
+.contact_tel, .contact_email {
+  position: absolute;
+	font-size: 12px;
+  font-family: "Lato";
+  color: #f0d8d9;
+	text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+.contact_tel {
+  padding: 47px 0 10px 23px;
+}
+
+.contact_email {
+  padding: 68px 0 10px 23px;
+}
+
+.contact_tel::before {
+  background-image: url(assets/img/tel.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+  width: 10px;
+  height: 12px;
+  left: 2px;
+  bottom: 12px;
+}
+
+.contact_email::before {
+  background-image: url(assets/img/mail.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+  width: 14px;
+  height: 12px;
+  left: 0px;
+  bottom: 8px;
+}
+
+.get_bottom {
+  height: 6px;
+  background-color: #ea676b;
+}
+
+footer {
+  background-color: #2d303a;
+  height: 76px;
+}
+ 
+.footer_envelope {
+  width: 940px;
+  padding: 0 40px 0 40px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.copyright {
+  color: #666d89;
+  font-size: 12px;
+  font-family: "Lato";
+  padding: 30px 0 0 2px;
+  letter-spacing: -0.01em;
+  width: 250px;
+}
+
+.icon_social {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 32px);
+  grid-template-rows: 32px;
+  grid-gap: 8.5px;
+  padding: 22px 0 0 534px;
+}
+
+ .facebook:hover {
+  transform: scale(1.15);
+}
+
+.google:hover {
+  transform: scale(1.15);
+}
+
+.twitter:hover {
+  transform: scale(1.15);
+}
+
+.linkedin:hover {
+  transform: scale(1.15);
+}
+
+/* .gl, .tw, .linked {
+  padding-left: 3px;
+} */
