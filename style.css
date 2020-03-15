@@ -753,3 +753,17 @@ footer {
   padding-left: 3px;
 } */
 /* Singolo3 */
+
+/* Script */
+
+.nav a.active {
+  color: #f06c64;
+}
+
+.nav a:not(.active):hover {
+  color: #f06c64;
+}
+
+.head_menu-sticky {
+  position: sticky;
+}
