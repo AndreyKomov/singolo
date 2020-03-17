@@ -1,7 +1,7 @@
 const MENU=document.getElementById ("menu");
-const header = document.querySelector("head_menu")
+const header = document.getElementById("head_menu")
 
-header.classList.add("head_menu-sticky");
+header.classList.add("head_menu_sticky");
 
 MENU.addEventListener("click", (event) => {
   MENU.querySelectorAll("a").forEach(el => el.classList.remove("active"));

@@ -16,8 +16,8 @@
 /* FONTS */
 
 body {
-
-	font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: auto;
 }
 
 /* HEADER */
@@ -29,7 +29,10 @@ body {
 }
 
 .header {
-	background-color: #2d303a;
+  top: 0;
+  background-color: #2d303a;
+  position: sticky;
+  z-index: 2;
 }
 
 .header_navigation {
@@ -72,7 +75,8 @@ body {
 }
 
 .nav_link_home {
-	color: #f06c64;
+  /* color: #f06c64; */
+  color: white;
 	font-size: 12px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -764,6 +768,6 @@ footer {
   color: #f06c64;
 }
 
-.head_menu-sticky {
+.head_menu_sticky {
   position: sticky;
 }
