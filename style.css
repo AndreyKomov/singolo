@@ -17,7 +17,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 /* HEADER */
@@ -765,9 +765,18 @@ footer {
 }
 
 .nav a:not(.active):hover {
-  color: #f06c64;
+  color: white;
 }
 
 .head_menu_sticky {
   position: sticky;
 }
+
+#message_block {
+  position: absolute;
+  background: #000080;
+}
+#message_block .hidden {
+  display: none;
+}
+
