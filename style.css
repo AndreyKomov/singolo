@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* FONTS */
 @font-face {
 	font-family: "Lato";
@@ -772,11 +776,15 @@ footer {
   position: sticky;
 }
 
+.second_page {
+  display: none;
+}
+
 #message_block {
   position: absolute;
-  background: #000080;
+  background: #000008;
 }
-#message_block .hidden {
+#message_block.hidden {
   display: none;
 }
 

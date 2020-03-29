@@ -13,8 +13,8 @@ MENU.addEventListener("click", (event) => {
 });
 
 BUTTON.addEventListener("click", () => {
-  const subject = document.getElementById ("subject1").value;
-  document.getElementById ("result").innerText = subject1;
+  const subject = document.getElementById ("subject1").value.toString ();
+  document.getElementById ("result").innerText = subject;
   document.getElementById ("message_block").classList.remove ("hidden");
 });
 
@@ -22,3 +22,4 @@ CLOSE_BTN.addEventListener("click", () => {
   document.getElementById ("result").innerText = "";
   document.getElementById ("message_block").classList.add ("hidden");
 });
+
