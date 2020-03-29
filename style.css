@@ -36,7 +36,7 @@ body {
   top: 0;
   background-color: #2d303a;
   position: sticky;
-  z-index: 2;
+  z-index: 10;
 }
 
 .header_navigation {
@@ -757,6 +757,10 @@ footer {
   transform: scale(1.15);
 }
 
+/* .for_scroll {
+  margin-top: 95px;
+} */
+
 /* .gl, .tw, .linked {
   padding-left: 3px;
 } */
@@ -779,6 +783,29 @@ footer {
 .second_page {
   display: none;
 }
+
+.black_screen_ver {
+  position: absolute;
+  width: 189px;
+  height: 334px;
+  background-color: black;
+  margin: 115px 114px 114px 125px;
+  opacity: 0;
+}
+
+.black_screen_horizontal {
+  width: 334px;
+  height: 188px;
+  position: absolute;
+  background-color: black;
+  margin: 187px 115px 200px 485px;
+  opacity: 0;
+}
+
+.screen_off {
+  opacity: 1;
+}
+
 
 #message_block {
   position: absolute;
