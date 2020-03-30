@@ -780,9 +780,15 @@ footer {
   position: sticky;
 }
 
+.for_scroll {
+  height: 95px;
+  opacity: 0;
+}
+
 .second_page {
   display: none;
 }
+
 
 .black_screen_ver {
   position: absolute;
