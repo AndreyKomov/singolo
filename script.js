@@ -2,6 +2,8 @@ const MENU = document.getElementById("menu");
 const HEADER = document.getElementById("head_menu");
 const BTNLEFT = document.getElementById("btn_left");
 const BTNRIGHT = document.getElementById("btn_right");
+const BTNBLR = document.getElementById ("bbr");
+const BTNBLL = document.getElementById ("bbl");
 const SCREEN = document.getElementById("screen");
 const BUTTON = document.getElementById("btn");
 const CLOSE_BTN = document.getElementById("close_btn");
@@ -32,15 +34,25 @@ BTNRIGHT.addEventListener("click", function () {
   //   slides[i - 1].class.remove("block");
   //   slides[i].class.add("block");
   // }
-  document.querySelector (".second_page").classList.remove("second_page");
-  document.querySelector (".slider_content").classList.add("second_page");
+  document.querySelectorAll (".second_page").forEach(el => el.classList.remove("second_page"));
+  document.querySelectorAll (".slider_content").forEach(el => el.classList.add("second_page"));
 });
 
 BTNLEFT.addEventListener("click", function () {
   // i = i - 1;
-  document.querySelector (".second_page").classList.remove("second_page");
-  document.querySelector (".slider_content").classList.add("second_page");
+  document.querySelectorAll (".second_page").forEach(el => el.classList.remove("second_page"));
+  document.querySelectorAll (".slider_content").forEach(el => el.classList.add("second_page"));
 });
+
+BTNBLR.addEventListener("click", function () {
+    document.querySelectorAll (".second_page").forEach(el => el.classList.remove("second_page"));
+    document.querySelectorAll (".slider_blue_page").forEach(el => el.classList.add("second_page"));
+  });
+
+BTNBLL.addEventListener ("click", function () {
+    document.querySelectorAll (".second_page").forEach(el => el.classList.remove("second_page"));
+    document.querySelectorAll (".slider_blue_page").forEach(el => el.classList.add("second_page"));
+  });
 
 // form
 BUTTON.addEventListener("click", () => {

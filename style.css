@@ -780,10 +780,10 @@ footer {
   position: sticky;
 }
 
-.for_scroll {
+/* .for_scroll {
   height: 95px;
   opacity: 0;
-}
+} */
 
 .second_page {
   display: none;
@@ -796,14 +796,29 @@ footer {
 }
 
 .blue_left_btn {
-  padding: 10px 10px 10px 10px;
+  top: 250px;
+  left: 41px;
+  cursor: pointer;
   position: absolute;
 }
 
+
+
 .blue_right_btn {
-  padding: 100px 10px 10px 10px;
+  top: 250px;
+  right: 39px;
+  cursor: pointer;
   position: absolute;
 }
+
+.blue_left_btn:hover {
+  transform: scale(0.5);
+}
+
+.blue_right_btn:hover {
+  transform: scale(0.5);
+}
+
 .black_screen_ver {
   position: absolute;
   width: 189px;
