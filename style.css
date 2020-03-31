@@ -789,7 +789,21 @@ footer {
   display: none;
 }
 
+.slider_blue_page {
+  max-width: 1020px;
+  max-height: 600px;
+  position: relative;
+}
 
+.blue_left_btn {
+  padding: 10px 10px 10px 10px;
+  position: absolute;
+}
+
+.blue_right_btn {
+  padding: 100px 10px 10px 10px;
+  position: absolute;
+}
 .black_screen_ver {
   position: absolute;
   width: 189px;

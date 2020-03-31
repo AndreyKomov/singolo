@@ -24,7 +24,7 @@ let i = 0;
 
 BTNRIGHT.addEventListener("click", function () {
   // i = i + 1;
-  // if (i <= slides.length) {
+  // if (i >= slides.length) {
   //   slides[i - 1].class.remove("block");
   //   // i = 0;
   //   slides[i].class.add("block");
