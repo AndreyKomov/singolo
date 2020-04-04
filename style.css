@@ -812,11 +812,11 @@ footer {
 }
 
 .blue_left_btn:hover {
-  transform: scale(0.5);
+  transform: scale(1.5);
 }
 
 .blue_right_btn:hover {
-  transform: scale(0.5);
+  transform: scale(1.5);
 }
 
 .black_screen_ver {
@@ -844,7 +844,8 @@ footer {
 
 #message_block {
   position: absolute;
-  background: #000008;
+  background: #f48c8f;
+  border: 5 px solid red;
 }
 #message_block.hidden {
   display: none;

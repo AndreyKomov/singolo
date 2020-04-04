@@ -1,12 +1,19 @@
 const MENU = document.getElementById("menu");
-const HEADER = document.getElementById("head_menu");
+const HEADER = document.querySelector("#head_menu");
 const BTNLEFT = document.getElementById("btn_left");
 const BTNRIGHT = document.getElementById("btn_right");
 const BTNBLR = document.getElementById ("bbr");
 const BTNBLL = document.getElementById ("bbl");
 const SCREEN = document.getElementById("screen");
-const BUTTON = document.getElementById("btn");
-const CLOSE_BTN = document.getElementById("close_btn");
+const PARENTPFL = document.querySelector(".portfolio_images"); //родитель списка элементов. 
+// И querySelector выбирает по всему (тегам, классам, id), использовать его!
+const BTNALL = document.querySelector(".all");
+const BTNWEB = document.querySelector(".web_design");
+const BTNGRH = document.querySelector(".graphic_design");
+const BTNART = document.querySelector(".artwork");
+const ARRPRT = document.querySelector(".images");
+const BUTTON = document.querySelector("#btn");
+const CLOSE_BTN = document.querySelector("#close_btn");
 
 HEADER.classList.add("head_menu_sticky");
 
@@ -53,9 +60,84 @@ BTNBLL.addEventListener ("click", function () {
     document.querySelectorAll (".second_page").forEach(el => el.classList.remove("second_page"));
     document.querySelectorAll (".slider_blue_page").forEach(el => el.classList.add("second_page"));
   });
+  
+  // images changer
+BTNALL.addEventListener ("click", function () {
+  let arr = document.querySelectorAll (".images");
+  let arr2 = []; // пустой массив для заполнения
+  for (let i = 0; i < arr.length; i++) {
+    arr2.push(arr[i]); //новый массив
+  }
+  
+  // debugger // для отладки по шагам кода
+  let arrNew = arr2.reverse(); // перевёрнутый массив
+  while(PARENTPFL.firstChild){    
+    PARENTPFL.removeChild(PARENTPFL.firstChild);  
+  }
+  for (let i = 0; i < arrNew.length; i++) {  // удаляет поочереди элементы
+    PARENTPFL.appendChild(arrNew[i]);        // метод работае с Node, с массивом (array не пашет),
+    // поэтому надо поодному элементу из массива запишивать arrNew i-ый берём поэтому.
+  }
+});
 
-// form
-BUTTON.addEventListener("click", () => {
+BTNWEB.addEventListener ("click", function () {
+  let arr = document.querySelectorAll (".images");
+  let arr2 = []; // пустой массив для заполнения
+  for (let i = 0; i < arr.length; i++) {
+    arr2.push(arr[i]); //новый массив
+  }
+  
+  // debugger // для отладки по шагам кода
+  let arrNew = arr2.reverse(); // перевёрнутый массив
+  while(PARENTPFL.firstChild){    
+    PARENTPFL.removeChild(PARENTPFL.firstChild);  
+  }
+  for (let i = 0; i < arrNew.length; i++) {  // удаляет поочереди элементы
+    PARENTPFL.appendChild(arrNew[i]);        // метод работае с Node, с массивом (array не пашет),
+    // поэтому надо поодному элементу из массива запишивать arrNew i-ый берём поэтому.
+  }
+});
+
+BTNGRH.addEventListener ("click", function () {
+  let arr = document.querySelectorAll (".images");
+  let arr2 = []; // пустой массив для заполнения
+  for (let i = 0; i < arr.length; i++) {
+    arr2.push(arr[i]); //новый массив
+  }
+  
+  // debugger // для отладки по шагам кода
+  let arrNew = arr2.reverse(); // перевёрнутый массив
+  while(PARENTPFL.firstChild){    
+    PARENTPFL.removeChild(PARENTPFL.firstChild);  
+  }
+  for (let i = 0; i < arrNew.length; i++) {  // удаляет поочереди элементы
+    PARENTPFL.appendChild(arrNew[i]);        // метод работае с Node, с массивом (array не пашет),
+    // поэтому надо поодному элементу из массива запишивать arrNew i-ый берём поэтому.
+  }
+});
+
+BTNART.addEventListener ("click", function () {
+  let arr = document.querySelectorAll (".images");
+  let arr2 = []; // пустой массив для заполнения
+  for (let i = 0; i < arr.length; i++) {
+    arr2.push(arr[i]); //новый массив
+  }
+  
+  // debugger // для отладки по шагам кода
+  let arrNew = arr2.reverse(); // перевёрнутый массив
+  while(PARENTPFL.firstChild){    
+    PARENTPFL.removeChild(PARENTPFL.firstChild);  
+  }
+  for (let i = 0; i < arrNew.length; i++) {  // удаляет поочереди элементы
+    PARENTPFL.appendChild(arrNew[i]);        // метод работае с Node, с массивом (array не пашет),
+    // поэтому надо поодному элементу из массива запишивать arrNew i-ый берём поэтому.
+  }
+});
+
+  // form
+  debugger
+BUTTON.addEventListener("click", function () {
+  debugger
   const subject = document.getElementById("subject1").value.toString();
   document.getElementById("result").innerText = subject;
   document.getElementById("message_block").classList.remove("hidden");
