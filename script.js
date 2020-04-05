@@ -140,7 +140,7 @@ BUTTON.addEventListener("click", function () {
   debugger
   const subjectName = document.getElementById("subject1").value.toString();
   const subject = document.getElementById("subject2").value.toString();
-  const subjectDescribe = document.getElementById("describe").valur.toString();
+  const subjectDescribe = document.getElementById("describe").value.toString();
   document.getElementById("result_name").innerText = subjectName;
   document.getElementById("result2").innerText = subject;
   document.getElementById("result_describe").innerText = subjectDescribe;

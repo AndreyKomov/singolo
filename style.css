@@ -841,12 +841,12 @@ footer {
   opacity: 1;
 }
 
-
 #message_block {
   position: absolute;
   background: #f48c8f;
   border: 5px solid red;
 }
+
 #message_block.hidden {
   display: none;
 }
