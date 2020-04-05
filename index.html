@@ -231,12 +231,14 @@
         <form class="get_a_quote_form" action="" method="POST">
           <input class="get_a_quote_form_input" type="text" required placeholder="Name (Required)" id="subject1">
           <input class="get_a_quote_form_input" type="email" required placeholder="Email (Required)">
-          <input class="get_a_quote_form_input" type="text" required placeholder="Subject">
-          <textarea class="get_a_quote_textarea" placeholder="Describe your project in detail..." rows="9"></textarea>
+          <input class="get_a_quote_form_input" type="text" required placeholder="Subject" id="subject2">
+          <textarea class="get_a_quote_textarea" placeholder="Describe your project in detail..." rows="9" id="describe"></textarea>
           <button class="submit_button" type="submit" id="btn">Submit</button>
           <div id="message_block" class="hidden">
             <div id="message">
-              <p>Text: <span id="result"></span></p>
+              <p>Name: <span id="result_name"></span></p>
+              <p>Subject: <span id="result2"></span></p>
+              <p>Describe: <span id="result_describe"></span></p>
               <br>
               <button id="close_btn">OK</button>
             </div>

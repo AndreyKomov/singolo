@@ -138,8 +138,12 @@ BTNART.addEventListener ("click", function () {
   debugger
 BUTTON.addEventListener("click", function () {
   debugger
-  const subject = document.getElementById("subject1").value.toString();
-  document.getElementById("result").innerText = subject;
+  const subjectName = document.getElementById("subject1").value.toString();
+  const subject = document.getElementById("subject2").value.toString();
+  const subjectDescribe = document.getElementById("describe").valur.toString();
+  document.getElementById("result_name").innerText = subjectName;
+  document.getElementById("result2").innerText = subject;
+  document.getElementById("result_describe").innerText = subjectDescribe;
   document.getElementById("message_block").classList.remove("hidden");
 });
 
