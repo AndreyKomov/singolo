@@ -845,6 +845,7 @@ footer {
   position: absolute;
   background: #f48c8f;
   border: 5px solid red;
+  border-radius: 5px;
 }
 
 #message_block.hidden {
