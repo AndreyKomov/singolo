@@ -148,7 +148,7 @@ BUTTON.addEventListener("click", function () {
 });
 
 CLOSE_BTN.addEventListener("click", () => {
-  document.getElementById("result").innerText = "";
+  // document.getElementById("result").innerText = "";
   document.getElementById("message_block").classList.add("hidden");
 });
 
